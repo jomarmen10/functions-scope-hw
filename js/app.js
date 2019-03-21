@@ -21,7 +21,7 @@ Write a function checkPalindrome that accepts a single argument, a string.
   beef up our palindrome function some. See if you can do it without looking back
   at your previous answer. The function should return true if the string is a palindrome,
    false if not. Make sure your function will give the correct answer for words with capital letters.
-*/
+*///
 
 function checkPalidrom(string){
   let revStr ="";
