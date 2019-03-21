@@ -34,4 +34,17 @@ function checkPalidrom(string){
     return false;
   }
 }
-console.log(checkPalidrom("radar"))
+//console.log(checkPalidrom("radar"))
+
+
+
+function sumDigit(num){
+  let stringNum = num.toString()
+  let result = 0
+  for(let i = 0; i < stringNum.length; i++){
+    result +=  parseInt(stringNum[i]);
+  }
+  return result;
+}
+
+console.log(sumDigit(22))
