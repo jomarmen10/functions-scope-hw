@@ -12,3 +12,26 @@
 // return spits out the value of the function
 //
 // it gives you a value after you run the function
+
+
+/*
+2. Palindrome again.
+Write a function checkPalindrome that accepts a single argument, a string.
+ Yes, you've done it before, but do it again. Later in this assignment we're gonna
+  beef up our palindrome function some. See if you can do it without looking back
+  at your previous answer. The function should return true if the string is a palindrome,
+   false if not. Make sure your function will give the correct answer for words with capital letters.
+*/
+
+function checkPalidrom(string){
+  let revStr ="";
+  for(let i = string.length-1; i >=0; i--){
+      revStr += string[i]
+    }
+  if(revStr === string){
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(checkPalidrom("radar"))
