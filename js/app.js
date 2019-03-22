@@ -71,4 +71,35 @@ function sumArray(arr){
   return result;
 }
 
-console.log(sumArray([1, 2, 3, 4, 5, 6]))
+//console.log(sumArray([1, 2, 3, 4, 5, 6]))
+
+/*Step One
+Write a function called checkPrime that will test whether a number is Prime.
+The function will return true (Boolean) if Prime, false if not. Hint: Check every
+number up to the square root. To do this, try a for loop.
+*/
+
+function checkPrime(num){
+  if(num === 1 || num === 2 || num === 3){
+    return true;
+  }
+  else if(num % 2 !== 0 && num % 3 !== 0){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+function primeLoop(num){
+  let result = Math.sqrt(num);
+  for(let i = 2; i < result; i++){
+    if(num % i === 0){
+      return false;
+    }
+  }
+}
+
+console.log(primeLoop(9))
+
+//console.log(Math.sqrt(8))
