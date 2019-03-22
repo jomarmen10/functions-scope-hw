@@ -91,15 +91,51 @@ function checkPrime(num){
 }
 
 
-function primeLoop(num){
-  let result = Math.sqrt(num);
-  for(let i = 2; i < result; i++){
-    if(num % i === 0){
+// function primeLoop(num){
+//   let result = Math.sqrt(num);
+//   for(let i = 2; i < result; i++){
+//     if(result % i === 0){
+//       return false;
+//     }
+//     return true
+//   }
+// }
+
+//console.log(Math.sqrt(8))
+
+function primeLoopTwo(num){
+  if(num === 1 ) return false
+  if(num === 2) return true;
+  for(let i = 0; i < num; i++){
+    if(num % 2 === 0 || num % 3 === 0) {
       return false;
     }
+    return true;
   }
 }
 
-console.log(primeLoop(9))
+//console.log(primeLoopTwo(7))
 
-//console.log(Math.sqrt(8))
+
+// function printPrime(num){
+//   let result = [];
+//   if(primeLoopTwo(num)){
+//     result.push(num)
+//   } else {
+//     result.push(num)
+//   }
+//   return result;
+// }
+
+function printPrimeLoop(num){
+  let result = [];
+  for(let i = 0; i <= num; i++){
+    if(primeLoopTwo(i)){
+      result.push(i)
+    }
+  }
+  return result
+}
+
+
+console.log(printPrimeLoop(68))
