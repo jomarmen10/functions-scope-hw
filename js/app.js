@@ -47,4 +47,13 @@ function sumDigit(num){
   return result;
 }
 
-console.log(sumDigit(22))
+//console.log(sumDigit(22))
+
+// my guide https://www.mathplanet.com/education/pre-algebra/right-triangles-and-algebra/the-pythagorean-theorem
+
+function calculateSide(sideA, sideB){
+  let sideC = Math.sqrt(((sideA * sideA) + (sideB * sideB)))
+  return sideC;
+}
+
+console.log(calculateSide(8,6))
